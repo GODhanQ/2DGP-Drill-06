@@ -75,6 +75,29 @@ class Small_Ball:
                 self.moving_vec = 0
                 self.y = self.floor
 
+    def draw(self):
+        self.image.draw(self.x, self.y)
+
+class Big_Ball:
+    def __init__(self):
+        self.x, self.y = random.randint(100, 700), 600
+        self.image = load_image('ball41x41.png')
+        self.floor = 70
+        self.moving_vec = random.randint(3, 8) * -1
+        self.is_moving = True
+        self.gravity = 1
+
+    def update(self):
+        if self.is_moving:
+            self.moving_vec -= self.gravity
+            self.y += self.moving_vec
+            if self.y < self.floor:
+                self.y = self.floor
+                self.moving_vec *= -0.8
+            if abs(self.moving_vec) < 0.1 and self.y <= self.floor:
+                self.is_moving = False
+                self.moving_vec = 0
+                self.y = self.floor
 
     def draw(self):
         self.image.draw(self.x, self.y)
