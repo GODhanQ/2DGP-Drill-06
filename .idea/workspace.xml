@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc288b26-11c3-4ef1-873f-2a70ace428c5" name="Changes" comment="moving_vec 를 추가하여 공의 움직임을 moving_vec의 변화로 종속시킴">
+    <list default="true" id="cc288b26-11c3-4ef1-873f-2a70ace428c5" name="Changes" comment="바닥에 닿을 때마다 움직임 벡터에 -0.8을 곱해서 탄성을 띄도록 만들어 더 역동적이게 만듦">
       <change beforePath="$PROJECT_DIR$/Lecture07_Game_Objects/boy_grass_object.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lecture07_Game_Objects/boy_grass_object.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1759218881464</updated>
-      <workItem from="1759224921222" duration="3385000" />
+      <workItem from="1759224921222" duration="3689000" />
     </task>
     <task id="LOCAL-00001" summary="작은 축구공을 랜덤 위치에 생성하여, 아래로 떨어지도록 구현">
       <option name="closed" value="true" />
@@ -95,7 +95,31 @@
       <option name="project" value="LOCAL" />
       <updated>1759228783701</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="공의 움직임을 더 역동적으로 만들기 위해 중력 변수를 추가하여 매 프레임마다 moving_vec에 빼서 아래로 계속 가속하도록 설정함">
+      <option name="closed" value="true" />
+      <created>1759228933612</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1759228933612</updated>
+    </task>
+    <task id="LOCAL-00004" summary="바닥에 닿을 때마다 움직임 벡터에 -0.8을 곱해서 탄성을 띄도록 만들어 더 역동적이게 만듦">
+      <option name="closed" value="true" />
+      <created>1759229020801</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1759229020801</updated>
+    </task>
+    <task id="LOCAL-00005" summary="바닥에 닿을 때마다 움직임 벡터에 -0.8을 곱해서 탄성을 띄도록 만들어 더 역동적이게 만듦">
+      <option name="closed" value="true" />
+      <created>1759229085566</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1759229085566</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,9 +139,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="작은 축구공을 랜덤 위치에 생성하여, 아래로 떨어지도록 구현" />
     <MESSAGE value="moving_vec 를 추가하여 공의 움직임을 moving_vec의 변화로 종속시킴" />
-    <option name="LAST_COMMIT_MESSAGE" value="moving_vec 를 추가하여 공의 움직임을 moving_vec의 변화로 종속시킴" />
+    <MESSAGE value="공의 움직임을 더 역동적으로 만들기 위해 중력 변수를 추가하여 매 프레임마다 moving_vec에 빼서 아래로 계속 가속하도록 설정함" />
+    <MESSAGE value="바닥에 닿을 때마다 움직임 벡터에 -0.8을 곱해서 탄성을 띄도록 만들어 더 역동적이게 만듦" />
+    <option name="LAST_COMMIT_MESSAGE" value="바닥에 닿을 때마다 움직임 벡터에 -0.8을 곱해서 탄성을 띄도록 만들어 더 역동적이게 만듦" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/2DGP_Drill_06$boy_grass_object.coverage" NAME="boy_grass_object 커버리지 결과" MODIFIED="1759228745921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lecture07_Game_Objects" />
+    <SUITE FILE_PATH="coverage/2DGP_Drill_06$boy_grass_object.coverage" NAME="boy_grass_object 커버리지 결과" MODIFIED="1759229060774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lecture07_Game_Objects" />
   </component>
 </project>

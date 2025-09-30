@@ -70,7 +70,10 @@ class Small_Ball:
             if self.y < self.floor:
                 self.y = self.floor
                 self.moving_vec *= -0.8
-
+            if abs(self.moving_vec) < 0.1 and self.y <= self.floor:
+                self.is_moving = False
+                self.moving_vec = 0
+                self.y = self.floor
 
 
     def draw(self):
