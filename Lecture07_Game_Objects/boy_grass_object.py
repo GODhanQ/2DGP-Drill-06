@@ -69,7 +69,7 @@ class Small_Ball:
             self.y += self.moving_vec
             if self.y < self.floor:
                 self.y = self.floor
-                self.moving_vec *= -0.8
+                self.moving_vec *= -0.5
             if abs(self.moving_vec) < 0.1 and self.y <= self.floor:
                 self.is_moving = False
                 self.moving_vec = 0
