@@ -69,6 +69,8 @@ class Small_Ball:
             self.y += self.moving_vec
             if self.y < self.floor:
                 self.y = self.floor
+                self.moving_vec *= -0.8
+
 
     def draw(self):
         self.image.draw(self.x, self.y)
