@@ -72,6 +72,7 @@ class Small_Ball:
                 self.moving_vec *= -0.8
 
 
+
     def draw(self):
         self.image.draw(self.x, self.y)
 
