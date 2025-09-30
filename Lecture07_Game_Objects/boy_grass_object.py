@@ -1,6 +1,7 @@
 from pico2d import *
 import random
 
+# Drill #7 제출 - 2024180014 민현규
 # Game object class here
 
 # 1. 객체를 도출 - 추상화
