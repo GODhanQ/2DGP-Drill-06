@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc288b26-11c3-4ef1-873f-2a70ace428c5" name="Changes" comment="바닥에 닿을 때마다 움직임 벡터에 -0.8을 곱해서 탄성을 띄도록 만들어 더 역동적이게 만듦">
+    <list default="true" id="cc288b26-11c3-4ef1-873f-2a70ace428c5" name="Changes" comment="공이 생성되는 위치를 더 다양하게 하여 랜덤성을 증가 시켜준다">
       <change beforePath="$PROJECT_DIR$/Lecture07_Game_Objects/boy_grass_object.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lecture07_Game_Objects/boy_grass_object.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1759218881464</updated>
-      <workItem from="1759224921222" duration="3689000" />
+      <workItem from="1759224921222" duration="4022000" />
     </task>
     <task id="LOCAL-00001" summary="작은 축구공을 랜덤 위치에 생성하여, 아래로 떨어지도록 구현">
       <option name="closed" value="true" />
@@ -119,7 +119,47 @@
       <option name="project" value="LOCAL" />
       <updated>1759229085566</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="바닥에 닿을 때 벡터의 크기가 충분히 크지 않다면 이동을 멈추도록 하기위하여 is_moving 플래그를 False로 하여 최적화 한다.">
+      <option name="closed" value="true" />
+      <created>1759229159301</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1759229159301</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Small_Ball로 구현한 물리 엔진을 그대로 가져와서, Big_Ball을 구현한다. 크기가 다른 만큼 수치조정을 약간 해준다.">
+      <option name="closed" value="true" />
+      <created>1759229232633</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1759229232633</updated>
+    </task>
+    <task id="LOCAL-00008" summary="클래스를 만들었으니 Big_Balls를 이용한 객체를 추가하여 화면에 출력한다.">
+      <option name="closed" value="true" />
+      <created>1759229268694</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1759229268694</updated>
+    </task>
+    <task id="LOCAL-00009" summary="큰 공은 좀더 잘 튀는 느낌을 주기 위해 작은 공의 탄성 값을 약간 내려서 크기가 큰 공과 작은 공의 움직임의 차별을 둔다.">
+      <option name="closed" value="true" />
+      <created>1759229353764</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1759229353764</updated>
+    </task>
+    <task id="LOCAL-00010" summary="공이 생성되는 위치를 더 다양하게 하여 랜덤성을 증가 시켜준다">
+      <option name="closed" value="true" />
+      <created>1759229447888</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1759229447888</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,9 +181,14 @@
     <MESSAGE value="moving_vec 를 추가하여 공의 움직임을 moving_vec의 변화로 종속시킴" />
     <MESSAGE value="공의 움직임을 더 역동적으로 만들기 위해 중력 변수를 추가하여 매 프레임마다 moving_vec에 빼서 아래로 계속 가속하도록 설정함" />
     <MESSAGE value="바닥에 닿을 때마다 움직임 벡터에 -0.8을 곱해서 탄성을 띄도록 만들어 더 역동적이게 만듦" />
-    <option name="LAST_COMMIT_MESSAGE" value="바닥에 닿을 때마다 움직임 벡터에 -0.8을 곱해서 탄성을 띄도록 만들어 더 역동적이게 만듦" />
+    <MESSAGE value="바닥에 닿을 때 벡터의 크기가 충분히 크지 않다면 이동을 멈추도록 하기위하여 is_moving 플래그를 False로 하여 최적화 한다." />
+    <MESSAGE value="Small_Ball로 구현한 물리 엔진을 그대로 가져와서, Big_Ball을 구현한다. 크기가 다른 만큼 수치조정을 약간 해준다." />
+    <MESSAGE value="클래스를 만들었으니 Big_Balls를 이용한 객체를 추가하여 화면에 출력한다." />
+    <MESSAGE value="큰 공은 좀더 잘 튀는 느낌을 주기 위해 작은 공의 탄성 값을 약간 내려서 크기가 큰 공과 작은 공의 움직임의 차별을 둔다." />
+    <MESSAGE value="공이 생성되는 위치를 더 다양하게 하여 랜덤성을 증가 시켜준다" />
+    <option name="LAST_COMMIT_MESSAGE" value="공이 생성되는 위치를 더 다양하게 하여 랜덤성을 증가 시켜준다" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/2DGP_Drill_06$boy_grass_object.coverage" NAME="boy_grass_object 커버리지 결과" MODIFIED="1759229060774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lecture07_Game_Objects" />
+    <SUITE FILE_PATH="coverage/2DGP_Drill_06$boy_grass_object.coverage" NAME="boy_grass_object 커버리지 결과" MODIFIED="1759229484993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lecture07_Game_Objects" />
   </component>
 </project>
