@@ -53,6 +53,21 @@ class Zombie:
                              frame_width, frame_height,
                              self.x, self.y,
                              frame_width // 5, frame_height // 5)
+
+class Small_Ball:
+    def __init__(self):
+        self.x, self.y = random.randint(100, 700), 600
+        self.image = load_image('ball21x21.png')
+        self.floor = 60
+
+    def update(self):
+        self.y -= 10
+        if self.y < self.floor:
+            self.y = self.floor
+
+    def draw(self):
+        self.image.draw(self.x, self.y)
+
 def handle_events():
     global running
     events = get_events()
@@ -62,12 +77,9 @@ def handle_events():
         elif event.type == SDL_KEYDOWN and event.key == SDLK_ESCAPE:
             running = False
 
-
-
-
 open_canvas()
 
-global team, zombies
+global team, zombies, small_balls
 def reset_world():
     global running
     running = True
@@ -76,7 +88,7 @@ def reset_world():
     world = [] # 게임 월드 초기화
 
     # 객체들을 생성
-    global grass, team, zombies
+    global grass, team, zombies, small_balls
     grass = Grass()
     world.append(grass)
 
@@ -85,6 +97,12 @@ def reset_world():
 
     zombies = [Zombie() for _ in range(1)]
     world += zombies
+
+    small_balls = [Small_Ball() for _ in range(10)]
+    world += small_balls
+
+    # big_balls = [Big_Ball() for _ in range(10)]
+    # world += big_balls
 
 reset_world()
 
