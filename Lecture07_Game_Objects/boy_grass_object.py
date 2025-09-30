@@ -122,7 +122,7 @@ def reset_world():
     world = [] # 게임 월드 초기화
 
     # 객체들을 생성
-    global grass, team, zombies, small_balls
+    global grass, team, zombies, small_balls, big_balls
     grass = Grass()
     world.append(grass)
 
@@ -135,8 +135,8 @@ def reset_world():
     small_balls = [Small_Ball() for _ in range(10)]
     world += small_balls
 
-    # big_balls = [Big_Ball() for _ in range(10)]
-    # world += big_balls
+    big_balls = [Big_Ball() for _ in range(10)]
+    world += big_balls
 
 reset_world()
 
