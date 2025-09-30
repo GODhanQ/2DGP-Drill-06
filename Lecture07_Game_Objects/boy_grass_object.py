@@ -59,9 +59,10 @@ class Small_Ball:
         self.x, self.y = random.randint(100, 700), 600
         self.image = load_image('ball21x21.png')
         self.floor = 60
+        self.moving_vec = random.randint(3, 8) * -1
 
     def update(self):
-        self.y -= 10
+        self.y += self.moving_vec
         if self.y < self.floor:
             self.y = self.floor
 
