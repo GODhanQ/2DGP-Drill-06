@@ -56,7 +56,7 @@ class Zombie:
 
 class Small_Ball:
     def __init__(self):
-        self.x, self.y = random.randint(100, 700), 600
+        self.x, self.y = random.randint(100, 700), random.randint(300, 600)
         self.image = load_image('ball21x21.png')
         self.floor = 60
         self.moving_vec = random.randint(3, 8) * -1
@@ -80,7 +80,7 @@ class Small_Ball:
 
 class Big_Ball:
     def __init__(self):
-        self.x, self.y = random.randint(100, 700), 600
+        self.x, self.y = random.randint(100, 700), random.randint(300, 600)
         self.image = load_image('ball41x41.png')
         self.floor = 70
         self.moving_vec = random.randint(3, 8) * -1
